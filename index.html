@@ -1,0 +1,87 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Feliz niver</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="icon" type="image/x-icon" href="favicon.ico">
+</head>
+<body>
+  <div id="book-section">
+    <div class="card">
+      <div class="balloons">
+        <div class="balloon"></div>
+        <div class="balloon"></div>
+        <div class="balloon"></div>
+      </div>
+      <div id="book-page-0" class="book-page">
+        <h1>FELIZ ANIVERSÁRIO MEU AMOR 🎂</h1>
+        <p>Um pequeno presente para voce, fofuxa</p>
+        <button class="nav-btn" id="next-btn-0" onclick="nextPage()">Próximo</button>
+      </div>
+      <div id="book-page-1" class="book-page hidden">
+        <h1>Para a minha querida</h1>
+        <p>Hoje é seu dia, minha linda!<br>Espero que seu dia seja incrível e cheio de alegria</p>
+        <button class="nav-btn" id="next-btn-1" onclick="nextPage()">Próximo</button>
+        <button class="nav-btn" id="prev-btn-1" onclick="prevPage()">Voltar</button>
+      </div>
+      <div id="book-page-2" class="book-page hidden">
+        <h1>Felicidades🎈</h1>
+        <p>Espero que viva uma vida próspera e que realize todos os seus sonhos<br>Nunca deixe de ser essa garota incrível!</p>
+        <button class="nav-btn" id="next-btn-2" onclick="nextPage()">Próximo</button>
+        <button class="nav-btn" id="prev-btn-2" onclick="prevPage()">Voltar</button>
+      </div>
+      <div id="book-page-3" class="book-page hidden">
+        <h1>Com amor
+          <span class="heart-icon" style="vertical-align: middle; display: inline-flex;">
+            <svg width="32" height="32" viewBox="0 0 64 64" fill="#ffe6f7" xmlns="http://www.w3.org/2000/svg">
+              <path d="M32 58s-1.7-1.5-4.3-3.7C15.2 44.2 4 34.6 4 23.5 4 14.6 11.6 8 20.5 8c4.5 0 8.7 2.1 11.5 5.7C34.8 10.1 39 8 43.5 8 52.4 8 60 14.6 60 23.5c0 11.1-11.2 20.7-23.7 30.8C33.7 56.5 32 58 32 58z"/>
+            </svg>
+          </span>
+        </h1>
+       
+      
+        <div class="surpresa-container" style="margin-top:32px; box-shadow:none; background:none; padding:0; max-width:unset; min-width:unset;">
+          <h1 style="font-size:1.3rem; color:#444; margin-bottom:16px;">Te conheço a tão pouco tempo mas já faz grande parte da minha vida, é incrível a diferença que faz nos meus dias <br>  Obrigado por ser uma pessoa tão importante e maravilhosa para mim<br>TI AMU</h1>
+          <div class="surpresa-img-placeholder">
+            <img src="https://cdn.discordapp.com/attachments/847911728456269833/1422730458378276965/IMG_20250930_204246.jpg?ex=68ddbc7e&is=68dc6afe&hm=5204cc192a811d10126777cc5fe1357c5f105c3795e120342c532ffab4a7a071" alt="Surpresa" style="width: 90%; max-width:848px; max-height:300px; display:block; margin:0 auto;" />
+          </div>
+          <p>Obrigado por tudo, minha fofuxa
+            <span class="heart-icon" style="vertical-align: middle; display: inline-flex;">
+              <svg width="32" height="32" viewBox="0 0 64 64" fill="#ffe6f7" xmlns="http://www.w3.org/2000/svg">
+                <path d="M32 58s-1.7-1.5-4.3-3.7C15.2 44.2 4 34.6 4 23.5 4 14.6 11.6 8 20.5 8c4.5 0 8.7 2.1 11.5 5.7C34.8 10.1 39 8 43.5 8 52.4 8 60 14.6 60 23.5c0 11.1-11.2 20.7-23.7 30.8C33.7 56.5 32 58 32 58z"/>
+              </svg>
+                <div class="signature">— De seu xuxuzinho</div> 
+            </span>
+          </p>
+        </div>
+        <button class="nav-btn" id="restart-btn" onclick="restartBook()">Inicio</button>
+        <button class="nav-btn" id="prev-btn-3" onclick="prevPage()">Voltar</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- Music player (sticky bottom) -->
+  <div id="music-player" class="music-player" aria-label="Music player">
+    <img src="download.jpeg" alt="Album cover" class="mp-cover">
+    <div class="mp-controls">
+      <button id="mp-play" class="mp-play" aria-label="Play/Pause">▶</button>
+      <div class="mp-meta">
+        <div class="mp-title">Let Down — Radiohead</div>
+        <div class="mp-artist">Radiohead</div>
+        <div class="mp-times"><span id="mp-current">0:00</span> / <span id="mp-duration">0:00</span></div>
+        <div class="mp-progress" id="mp-progress" aria-label="progress bar" role="progressbar" aria-valuemin="0" aria-valuemax="100">
+          <div class="mp-progress-filled" id="mp-progress-filled"></div>
+        </div>
+      </div>
+    </div>
+    <audio id="mp-audio" preload="metadata">
+      <source src="Radiohead-Let-Down-Choir-Complete-NEW-VERSION-(CeeNaija.com).mp3" type="audio/mpeg">
+      Your browser does not support the audio element.
+    </audio>
+  </div>
+
+  <link rel="stylesheet" href="styles.css">
+  <script src="main.js"></script>
+</body>
+</html>
