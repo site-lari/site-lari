@@ -1,4 +1,4 @@
-// main.js - Plain JS logic for book and surpresa navigation
+
 
 let currentPage = 0;
 const totalPages = 4;
@@ -13,7 +13,7 @@ function updateBookPages() {
   current.classList.add('active');
   current.classList.remove('hidden');
 
-  // Disable/enable navigation buttons
+
   for (let i = 0; i < totalPages; i++) {
     const nextBtn = document.getElementById(`next-btn-${i}`);
     const prevBtn = document.getElementById(`prev-btn-${i}`);
